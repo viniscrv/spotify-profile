@@ -5,10 +5,16 @@ import CssBaseline from "@mui/material/CssBaseline";
 
 import {
   Avatar,
+  Badge,
   Box,
+  Button,
   Container,
+  Divider,
   Grid,
   Link,
+  List,
+  ListItem,
+  ListItemText,
   TextField,
   Typography,
 } from "@mui/material";
@@ -50,11 +56,54 @@ function App() {
           xs={2}
           sx={{ backgroundColor: "#121212", borderRadius: "10px" }}
           p={1}
-          display="flex"
-          justifyContent="center"
-          flexWrap={"wrap"}
         >
-          menu-lateral
+          <List>
+            <ListItem button>
+              <ListItemText primary="Sua Biblioteca" />
+            </ListItem>
+            <Divider />
+            <ListItem button divider>
+              <ListItemText primary="Criar Playlist" />
+            </ListItem>
+            <ListItem button>
+              <ListItemText primary="Músicas Curtidas" />
+            </ListItem>
+            <Divider light />
+            <ListItem button>
+              <ListItemText primary="Seus Episódios" />
+            </ListItem>
+          </List>
+
+          <Divider light sx={{
+            margin: '1.85em 0',
+            backgroundColor: 'transparent',
+            border: '1px solid transparent' 
+          }}/>
+
+          <List>
+            <ListItem button>
+              <ListItemText primary="Playlist 1" />
+            </ListItem>
+            <Divider />
+            <ListItem button divider>
+              <ListItemText primary="Playlist 2" />
+            </ListItem>
+            <ListItem button>
+              <ListItemText primary="Playlist 3" />
+            </ListItem>
+            <Divider light />
+            <ListItem button>
+              <ListItemText primary="Playlist 4" />
+            </ListItem>
+            <Divider light />
+            <ListItem button>
+              <ListItemText primary="Playlist 5" />
+            </ListItem>
+            <Divider light />
+            <ListItem button>
+              <ListItemText primary="Playlist 6" />
+            </ListItem>
+          </List>
         </Grid>
 
         <Grid
@@ -76,7 +125,7 @@ function App() {
             />
             <div style={{ margin: "1.6em" }}>
               <p>PERFIL</p>
-              <h1>Vinícius</h1>
+              <Typography variant='h1' sx={{fontWeight: '500'}}>Vinícius</Typography>
               <p>6 playlists públicas</p>
             </div>
           </div>
@@ -97,7 +146,6 @@ function App() {
                 justifyContent="space-between"
                 sx={{
                   maxWidth: "100%",
-                  padding: "1em 2em",
                 }}
               >
                 <Box>
@@ -110,6 +158,7 @@ function App() {
                 </Box>
                 <Link sx={{ color: "#A7A7A7" }}>Ver tudo</Link>
               </Box>
+              
               <Box
                 p={2}
                 sx={{
