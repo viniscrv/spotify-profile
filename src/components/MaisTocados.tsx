@@ -23,6 +23,7 @@ const MaisTocados = () => {
       <Box
       display='flex'
       justifyContent='space-between'
+      flexWrap = 'wrap'
       sx={{
         maxWidth: '800px'
       }}
@@ -41,8 +42,7 @@ const MaisTocados = () => {
             }}
             display="flex"
             flexDirection="column"
-            alignItems="initial"
-            justifyContent="center"
+            justifyContent="initial"
           >
             <Avatar
               alt="Vemy Sharp"
@@ -50,6 +50,59 @@ const MaisTocados = () => {
               sx={{ width: 150, height: 150 }}
             />
             <Typography variant="h6">A Boogie Wit da Hoodie</Typography>
+            <Typography variant="body1" sx={{ color: "#A7A7A7" }}>
+              Artista
+            </Typography>
+          </Box>
+          
+          <Box
+            p={2}
+            sx={{
+              maxWidth: "180px",
+              width: "100%",
+              height: "260px",
+              backgroundColor: "#0c0c0c",
+              borderRadius: "10px",
+              "&:hover": {
+                backgroundColor: "#282828",
+              },
+            }}
+            display="flex"
+            flexDirection="column"
+          >
+            <Avatar
+              alt="Vemy Sharp"
+              src="../src/assets/img/justin.jpg"
+              sx={{ width: 150, height: 150 }}
+            />
+            <Typography variant="h6">Justin Bieber</Typography>
+            <Typography variant="body1" sx={{ color: "#A7A7A7" }}>
+              Artista
+            </Typography>
+          </Box>
+
+          <Box
+            p={2}
+            sx={{
+              maxWidth: "180px",
+              width: "100%",
+              height: "260px",
+              backgroundColor: "#0c0c0c",
+              borderRadius: "10px",
+              "&:hover": {
+                backgroundColor: "#282828",
+              },
+            }}
+            display="flex"
+            flexDirection="column"
+            justifyContent="initial"
+          >
+            <Avatar
+              alt="Vemy Sharp"
+              src="../src/assets/img/travis.jpg"
+              sx={{ width: 150, height: 150 }}
+            />
+            <Typography variant="h6">Travis Scott</Typography>
             <Typography variant="body1" sx={{ color: "#A7A7A7" }}>
               Artista
             </Typography>
@@ -68,69 +121,13 @@ const MaisTocados = () => {
             }}
             display="flex"
             flexDirection="column"
-            alignItems="initial"
-            justifyContent="center"
           >
             <Avatar
               alt="Vemy Sharp"
-              src="../src/assets/img/boogie.jpg"
+              src="../src/assets/img/weeknd.jpg"
               sx={{ width: 150, height: 150 }}
             />
-            <Typography variant="h6">A Boogie Wit da Hoodie</Typography>
-            <Typography variant="body1" sx={{ color: "#A7A7A7" }}>
-              Artista
-            </Typography>
-          </Box>
-          <Box
-            p={2}
-            sx={{
-              maxWidth: "180px",
-              width: "100%",
-              height: "260px",
-              backgroundColor: "#0c0c0c",
-              borderRadius: "10px",
-              "&:hover": {
-                backgroundColor: "#282828",
-              },
-            }}
-            display="flex"
-            flexDirection="column"
-            alignItems="initial"
-            justifyContent="center"
-          >
-            <Avatar
-              alt="Vemy Sharp"
-              src="../src/assets/img/boogie.jpg"
-              sx={{ width: 150, height: 150 }}
-            />
-            <Typography variant="h6">A Boogie Wit da Hoodie</Typography>
-            <Typography variant="body1" sx={{ color: "#A7A7A7" }}>
-              Artista
-            </Typography>
-          </Box>
-          <Box
-            p={2}
-            sx={{
-              maxWidth: "180px",
-              width: "100%",
-              height: "260px",
-              backgroundColor: "#0c0c0c",
-              borderRadius: "10px",
-              "&:hover": {
-                backgroundColor: "#282828",
-              },
-            }}
-            display="flex"
-            flexDirection="column"
-            alignItems="initial"
-            justifyContent="center"
-          >
-            <Avatar
-              alt="Vemy Sharp"
-              src="../src/assets/img/boogie.jpg"
-              sx={{ width: 150, height: 150 }}
-            />
-            <Typography variant="h6">A Boogie Wit da Hoodie</Typography>
+            <Typography variant="h6">The Weeknd</Typography>
             <Typography variant="body1" sx={{ color: "#A7A7A7" }}>
               Artista
             </Typography>

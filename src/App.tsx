@@ -2,7 +2,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
 import { Avatar, Box, Grid, Link, Typography } from "@mui/material";
-import MenuLateral from "./components/menuLateral";
+import MenuLateral from "./components/MenuLateral";
 import Header from "./components/Header";
 import AreaPerfil from "./components/AreaPerfil";
 import MaisTocados from "./components/MaisTocados";
@@ -52,13 +52,14 @@ function App() {
           <Grid container>
             <Grid
               m={1}
-              p={2}
+              p={3}
               sx={{
                 backgroundImage:
-                  "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9))",
+                  "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,.9))",
                 minHeight: "70vh",
                 width: "100%",
                 borderRadius: "20px",
+                marginRight: '2em'
               }}
             >
               <MaisTocados />
