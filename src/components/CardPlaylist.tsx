@@ -1,9 +1,16 @@
-import { Box, Avatar, Typography } from "@mui/material";
+import {
+  Box,
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  Typography,
+} from "@mui/material";
 import React from "react";
 
-const CartaoPerfil = (props: { nome: string; imgPerfil: string }) => {
+const CardPlaylist = (props: { nome: string; imgPlaylist: string }) => {
   return (
-    <>
+    <div>
       <Box
         p={2}
         sx={{
@@ -20,18 +27,14 @@ const CartaoPerfil = (props: { nome: string; imgPerfil: string }) => {
         flexDirection="column"
         justifyContent="initial"
       >
-        <Avatar
-          alt="Vemy Sharp"
-          src={props.imgPerfil}
-          sx={{ width: 150, height: 150 }}
+        <img
+          style={{ borderRadius: "5px", marginBottom: "1em" }}
+          src={props.imgPlaylist}
         />
         <Typography variant="h6">{props.nome}</Typography>
-        <Typography variant="body1" sx={{ color: "#A7A7A7" }}>
-          Artista
-        </Typography>
       </Box>
-    </>
+    </div>
   );
 };
 
-export default CartaoPerfil;
+export default CardPlaylist;

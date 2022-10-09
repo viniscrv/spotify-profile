@@ -26,7 +26,7 @@ function MenuLateral() {
           </ListItemIcon>
           <ListItemText primary="Sua Biblioteca" />
         </ListItem>
-        <ListItem button >
+        <ListItem button>
           <ListItemIcon>
             <FontAwesomeIcon icon={faPlus} />
           </ListItemIcon>
@@ -45,18 +45,16 @@ function MenuLateral() {
           <ListItemText primary="Seus Episódios" />
         </ListItem>
       </List>
-      <Divider
-        light
+      <Divider light sx={{}} />
+      <List
         sx={{
+          color: "#A7A7A7",
         }}
-      />
-      <List sx={{
-        color: '#A7A7A7'
-      }}>
+      >
         <ListItem button>
           <ListItemText primary="Lofi hip hop - beats to relax/study to" />
         </ListItem>
-        <ListItem button >
+        <ListItem button>
           <ListItemText primary="Rap Workout" />
         </ListItem>
         <ListItem button>

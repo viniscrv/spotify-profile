@@ -2,8 +2,6 @@ import { Box, Typography, Link, Avatar, Badge } from "@mui/material";
 import React, { useState } from "react";
 import CartaoPerfil from "./CartaoPerfil";
 
-
-
 const MaisTocados = () => {
   return (
     <div>
@@ -11,6 +9,8 @@ const MaisTocados = () => {
         display="flex"
         alignItems="flex-start"
         justifyContent="space-between"
+        mt={5}
+        mr={1}
       >
         <Box>
           <Typography variant="h5" sx={{ fontWeight: "600" }}>
@@ -37,28 +37,28 @@ const MaisTocados = () => {
         }}
       >
         <CartaoPerfil
-        nome='A Boogie Wit da Hoodie'
-        imgPerfil={'../src/assets/img/boogie.jpg'}
+          nome="A Boogie Wit da Hoodie"
+          imgPerfil={"../src/assets/img/boogie.jpg"}
         />
         <CartaoPerfil
-        nome='Justin Bieber'
-        imgPerfil={'../src/assets/img/justin.jpg'}
+          nome="Justin Bieber"
+          imgPerfil={"../src/assets/img/justin.jpg"}
         />
         <CartaoPerfil
-        nome='Travis Scott'
-        imgPerfil={'../src/assets/img/travis.jpg'}
+          nome="Travis Scott"
+          imgPerfil={"../src/assets/img/travis.jpg"}
         />
         <CartaoPerfil
-        nome='The Weeknd'
-        imgPerfil={'../src/assets/img/weeknd.jpg'}
+          nome="The Weeknd"
+          imgPerfil={"../src/assets/img/weeknd.jpg"}
         />
         <CartaoPerfil
-        nome='Selton DJ'
-        imgPerfil={'../src/assets/img/selton.jpg'}
+          nome="Selton DJ"
+          imgPerfil={"../src/assets/img/selton.jpg"}
         />
         <CartaoPerfil
-        nome='The Neighborhood'
-        imgPerfil={'../src/assets/img/neighborhood.jpg'}
+          nome="The Neighborhood"
+          imgPerfil={"../src/assets/img/neighborhood.jpg"}
         />
       </Box>
     </div>
