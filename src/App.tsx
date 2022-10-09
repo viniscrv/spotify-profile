@@ -61,9 +61,9 @@ function App() {
                 p={3}
                 sx={{
                   backgroundImage:
-                    "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,.9))",
+                    "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,1))",
                   width: "100%",
-                  borderRadius: "20px",
+                  borderRadius: "10px",
                 }}
               >
                 <Link sx={{ color: "white", cursor: "pointer" }}>

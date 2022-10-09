@@ -13,6 +13,7 @@ const CardPlaylist = (props: { nome: string; imgPlaylist: string }) => {
     <div>
       <Box
         p={2}
+        mr={2}
         sx={{
           maxWidth: "180px",
           width: "100%",

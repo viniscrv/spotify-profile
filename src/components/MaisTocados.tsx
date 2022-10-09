@@ -30,8 +30,6 @@ const MaisTocados = () => {
 
       <Box
         display="flex"
-        justifyContent="space-between"
-        flexWrap="wrap"
         sx={{
           maxWidth: "1200px",
         }}
