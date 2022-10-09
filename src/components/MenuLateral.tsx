@@ -4,6 +4,8 @@ import {
   ListItemText,
   Divider,
   ListItemIcon,
+  Collapse,
+  ListItemButton,
 } from "@mui/material";
 import React from "react";
 
@@ -15,8 +17,16 @@ import {
   faHeart,
   faPlus,
 } from "@fortawesome/free-solid-svg-icons";
+import { ExpandLess, ExpandMore, StarBorder } from "@mui/icons-material";
 
 function MenuLateral() {
+
+  const [open, setOpen] = React.useState(false);
+
+  const handleClick = () => {
+    setOpen(!open);
+  };
+
   return (
     <>
       <List>
@@ -69,6 +79,36 @@ function MenuLateral() {
         <ListItem button>
           <ListItemText primary="TRAPPERZ" />
         </ListItem>
+
+        <ListItemButton onClick={handleClick}>
+        <ListItemText primary="Suas playlists" />
+        {open ? <ExpandLess /> : <ExpandMore />}
+      </ListItemButton>
+
+
+        <Collapse in={open} timeout="auto" unmountOnExit>
+        <List component="div" disablePadding>
+          <ListItemButton sx={{ pl: 4 }}>
+            <ListItemText primary="Playlist 01" />
+          </ListItemButton>
+          <ListItemButton sx={{ pl: 4 }}>
+            <ListItemText primary="Playlist 02" />
+          </ListItemButton>
+          <ListItemButton sx={{ pl: 4 }}>
+            <ListItemText primary="Playlist 03" />
+          </ListItemButton>
+          <ListItemButton sx={{ pl: 4 }}>
+            <ListItemText primary="Playlist 04" />
+          </ListItemButton>
+          <ListItemButton sx={{ pl: 4 }}>
+            <ListItemText primary="Playlist 05" />
+          </ListItemButton>
+          <ListItemButton sx={{ pl: 4 }}>
+            <ListItemText primary="Playlist 06" />
+          </ListItemButton>
+        </List>
+      </Collapse>
+
       </List>
     </>
   );
