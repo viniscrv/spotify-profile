@@ -1,5 +1,9 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
+import GlobalStyle from './styles/global';
+
+
+
 
 import { Avatar, Box, Grid, Link, Typography } from "@mui/material";
 import MenuLateral from "./components/MenuLateral";
@@ -32,7 +36,7 @@ function App() {
       <Grid container>
         <Grid
           xs={2}
-          sx={{ backgroundColor: "#0b0b0b", borderRadius: "10px" }}
+          sx={{ backgroundColor: "#0b0b0b" }}
           p={1}
         >
           <MenuLateral />
@@ -42,16 +46,16 @@ function App() {
           xs={10}
           sx={{
             background:
-              'linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url("../src/assets/img/test10.jpg")',
+              'linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url("../src/assets/img/test1.jpg")',
             backgroundRepeat: "repeat",
             backgroundSize: "contain",
           }}
         >
           <AreaPerfil />
 
-          <Grid container>
+          <Grid container xs={12}>
             <Grid
-              m={1}
+              m={2}
               p={3}
               sx={{
                 backgroundImage:
@@ -59,14 +63,15 @@ function App() {
                 minHeight: "70vh",
                 width: "100%",
                 borderRadius: "20px",
-                marginRight: '2em'
               }}
             >
               <MaisTocados />
+
             </Grid>
           </Grid>
         </Grid>
       </Grid>
+      <GlobalStyle/>
     </ThemeProvider>
   );
 }

@@ -1,55 +1,75 @@
-import { List, ListItem, ListItemText, Divider,  } from "@mui/material";
+import {
+  List,
+  ListItem,
+  ListItemText,
+  Divider,
+  ListItemIcon,
+} from "@mui/material";
 import React from "react";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBookBookmark,
+  faBookmark,
+  faCoffee,
+  faHeart,
+  faPlus,
+} from "@fortawesome/free-solid-svg-icons";
 
 function MenuLateral() {
   return (
     <>
       <List>
         <ListItem button>
+          <ListItemIcon>
+            <FontAwesomeIcon icon={faBookBookmark} />
+          </ListItemIcon>
           <ListItemText primary="Sua Biblioteca" />
         </ListItem>
-        <Divider />
-        <ListItem button divider>
+        <ListItem button >
+          <ListItemIcon>
+            <FontAwesomeIcon icon={faPlus} />
+          </ListItemIcon>
           <ListItemText primary="Criar Playlist" />
         </ListItem>
         <ListItem button>
+          <ListItemIcon>
+            <FontAwesomeIcon icon={faHeart} />
+          </ListItemIcon>
           <ListItemText primary="Músicas Curtidas" />
         </ListItem>
-        <Divider light />
         <ListItem button>
+          <ListItemIcon>
+            <FontAwesomeIcon icon={faBookmark} />
+          </ListItemIcon>
           <ListItemText primary="Seus Episódios" />
         </ListItem>
       </List>
       <Divider
         light
         sx={{
-          margin: "1.85em 0",
-          backgroundColor: "transparent",
-          border: "1px solid transparent",
         }}
       />
-      <List>
+      <List sx={{
+        color: '#A7A7A7'
+      }}>
         <ListItem button>
-          <ListItemText primary="Playlist 1" />
+          <ListItemText primary="Lofi hip hop - beats to relax/study to" />
         </ListItem>
-        <Divider />
-        <ListItem button divider>
-          <ListItemText primary="Playlist 2" />
+        <ListItem button >
+          <ListItemText primary="Rap Workout" />
         </ListItem>
         <ListItem button>
-          <ListItemText primary="Playlist 3" />
+          <ListItemText primary="DOPE." />
         </ListItem>
-        <Divider light />
         <ListItem button>
-          <ListItemText primary="Playlist 4" />
+          <ListItemText primary="Top Brasil" />
         </ListItem>
-        <Divider light />
         <ListItem button>
-          <ListItemText primary="Playlist 5" />
+          <ListItemText primary="No Cap" />
         </ListItem>
-        <Divider light />
         <ListItem button>
-          <ListItemText primary="Playlist 6" />
+          <ListItemText primary="TRAPPERZ" />
         </ListItem>
       </List>
     </>

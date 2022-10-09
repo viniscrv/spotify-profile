@@ -1,5 +1,8 @@
-import { Box, Typography, Link, Avatar } from "@mui/material";
-import React from "react";
+import { Box, Typography, Link, Avatar, Badge } from "@mui/material";
+import React, { useState } from "react";
+import CartaoPerfil from "./CartaoPerfil";
+
+
 
 const MaisTocados = () => {
   return (
@@ -13,125 +16,50 @@ const MaisTocados = () => {
           <Typography variant="h5" sx={{ fontWeight: "600" }}>
             Artistas mais tocados este mês
           </Typography>
-          <Typography variant="subtitle1" sx={{ color: "#A7A7A7", margin: '.6em 0' }}>
+          <Typography
+            variant="subtitle1"
+            sx={{ color: "#A7A7A7", margin: ".6em 0" }}
+          >
             Visível apenas para você
           </Typography>
         </Box>
-        <Link sx={{ color: "#A7A7A7" }}>Ver tudo</Link>
+        <Link underline="hover" sx={{ color: "#A7A7A7", cursor: "pointer" }}>
+          Ver tudo
+        </Link>
       </Box>
 
       <Box
-      display='flex'
-      justifyContent='space-between'
-      flexWrap = 'wrap'
-      sx={{
-        maxWidth: '800px'
-      }}
+        display="flex"
+        justifyContent="space-between"
+        flexWrap="wrap"
+        sx={{
+          maxWidth: "1200px",
+        }}
       >
-          <Box
-            p={2}
-            sx={{
-              maxWidth: "180px",
-              width: "100%",
-              height: "260px",
-              backgroundColor: "#0c0c0c",
-              borderRadius: "10px",
-              "&:hover": {
-                backgroundColor: "#282828",
-              },
-            }}
-            display="flex"
-            flexDirection="column"
-            justifyContent="initial"
-          >
-            <Avatar
-              alt="Vemy Sharp"
-              src="../src/assets/img/boogie.jpg"
-              sx={{ width: 150, height: 150 }}
-            />
-            <Typography variant="h6">A Boogie Wit da Hoodie</Typography>
-            <Typography variant="body1" sx={{ color: "#A7A7A7" }}>
-              Artista
-            </Typography>
-          </Box>
-          
-          <Box
-            p={2}
-            sx={{
-              maxWidth: "180px",
-              width: "100%",
-              height: "260px",
-              backgroundColor: "#0c0c0c",
-              borderRadius: "10px",
-              "&:hover": {
-                backgroundColor: "#282828",
-              },
-            }}
-            display="flex"
-            flexDirection="column"
-          >
-            <Avatar
-              alt="Vemy Sharp"
-              src="../src/assets/img/justin.jpg"
-              sx={{ width: 150, height: 150 }}
-            />
-            <Typography variant="h6">Justin Bieber</Typography>
-            <Typography variant="body1" sx={{ color: "#A7A7A7" }}>
-              Artista
-            </Typography>
-          </Box>
-
-          <Box
-            p={2}
-            sx={{
-              maxWidth: "180px",
-              width: "100%",
-              height: "260px",
-              backgroundColor: "#0c0c0c",
-              borderRadius: "10px",
-              "&:hover": {
-                backgroundColor: "#282828",
-              },
-            }}
-            display="flex"
-            flexDirection="column"
-            justifyContent="initial"
-          >
-            <Avatar
-              alt="Vemy Sharp"
-              src="../src/assets/img/travis.jpg"
-              sx={{ width: 150, height: 150 }}
-            />
-            <Typography variant="h6">Travis Scott</Typography>
-            <Typography variant="body1" sx={{ color: "#A7A7A7" }}>
-              Artista
-            </Typography>
-          </Box>
-          <Box
-            p={2}
-            sx={{
-              maxWidth: "180px",
-              width: "100%",
-              height: "260px",
-              backgroundColor: "#0c0c0c",
-              borderRadius: "10px",
-              "&:hover": {
-                backgroundColor: "#282828",
-              },
-            }}
-            display="flex"
-            flexDirection="column"
-          >
-            <Avatar
-              alt="Vemy Sharp"
-              src="../src/assets/img/weeknd.jpg"
-              sx={{ width: 150, height: 150 }}
-            />
-            <Typography variant="h6">The Weeknd</Typography>
-            <Typography variant="body1" sx={{ color: "#A7A7A7" }}>
-              Artista
-            </Typography>
-          </Box>
+        <CartaoPerfil
+        nome='A Boogie Wit da Hoodie'
+        imgPerfil={'../src/assets/img/boogie.jpg'}
+        />
+        <CartaoPerfil
+        nome='Justin Bieber'
+        imgPerfil={'../src/assets/img/justin.jpg'}
+        />
+        <CartaoPerfil
+        nome='Travis Scott'
+        imgPerfil={'../src/assets/img/travis.jpg'}
+        />
+        <CartaoPerfil
+        nome='The Weeknd'
+        imgPerfil={'../src/assets/img/weeknd.jpg'}
+        />
+        <CartaoPerfil
+        nome='Selton DJ'
+        imgPerfil={'../src/assets/img/selton.jpg'}
+        />
+        <CartaoPerfil
+        nome='The Neighborhood'
+        imgPerfil={'../src/assets/img/neighborhood.jpg'}
+        />
       </Box>
     </div>
   );

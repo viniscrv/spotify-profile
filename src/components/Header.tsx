@@ -15,7 +15,7 @@ const Header = () => {
               label="O que você quer ouvir?"
               variant="filled"
               size="small"
-              sx={{ width: "290px" }}
+              sx={{ width: "360px" }}
             />
           </Box>
           <Avatar alt="Vemy Sharp" src="../src/assets/img/profile.jpg" />
