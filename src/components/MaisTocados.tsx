@@ -1,4 +1,4 @@
-import { Box, Typography, Link, Avatar, Badge } from "@mui/material";
+import { Box, Typography, Link , Avatar, Badge } from "@mui/material";
 import React, { useState } from "react";
 import CartaoPerfil from "./CartaoPerfil";
 
@@ -9,7 +9,7 @@ const MaisTocados = () => {
         display="flex"
         alignItems="flex-start"
         justifyContent="space-between"
-        mt={5}
+        mt={1}
         mr={1}
       >
         <Box>
