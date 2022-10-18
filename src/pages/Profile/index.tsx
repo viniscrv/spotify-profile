@@ -10,8 +10,6 @@ import MusicasMaisTocadas from "../../components/MusicasMaisTocadas";
 import PlaylistsPublicas from "../../components/PlaylistsPublicas";
 import  GlobalStyle  from '../../styles/global'
 
-
-
 const darkTheme = createTheme({
     palette: {
       mode: 'dark',
