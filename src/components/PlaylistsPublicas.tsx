@@ -8,6 +8,8 @@ import {
 } from "@mui/material";
 import React from "react";
 import CardPlaylist from "./CardPlaylist";
+import { Link as Enviar } from "react-router-dom";
+
 
 const PlaylistsPublicas = () => {
   return (
@@ -26,9 +28,11 @@ const PlaylistsPublicas = () => {
             Playlists públicas
           </Typography>
         </Box>
-        <Link underline="hover" sx={{ color: "#A7A7A7", cursor: "pointer" }}>
-          Ver tudo
-        </Link>
+        <Enviar to='/Invalido'>
+          <Link underline="hover" sx={{ color: "#A7A7A7", cursor: "pointer" }}>
+            Ver tudo
+          </Link>
+        </Enviar>
       </Box>
 
       <Box

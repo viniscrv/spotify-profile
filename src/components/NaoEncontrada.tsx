@@ -1,20 +1,18 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
+import undraw from '../assets/img/undraw_page_not_found_re_e9o6 (2).svg'
 
 const NaoEncontrada = () => {
   return (
     <Box
       sx={{
-        width: "max-content",
-        margin: '2em auto',
+        display: 'flex',
+        height: '100%',
+        alignItems: 'center',
+        justifyContent: 'center',
       }}
     >
-      <Typography variant="h2" mb={5}>
-        Página não encontrada
-      </Typography>
-      <Button variant="contained" size="large" color="success" sx={{width: '100%', padding: '1.2em'}}>
-        Voltar
-      </Button>
+      <img src={undraw} style={{width: '25%'}}/>
     </Box>
   );
 };

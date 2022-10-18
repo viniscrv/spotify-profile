@@ -1,5 +1,7 @@
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link as Enviar } from "react-router-dom";
+
 import {
   Box,
   Typography,
@@ -33,9 +35,11 @@ const MusicasMaisTocadas = () => {
             Visível apenas para você
           </Typography>
         </Box>
-        <Link underline="hover" sx={{ color: "#A7A7A7", cursor: "pointer" }}>
-          Ver tudo
-        </Link>
+        <Enviar to='/Invalido'>
+          <Link underline="hover" sx={{ color: "#A7A7A7", cursor: "pointer" }}>
+            Ver tudo
+          </Link>
+        </Enviar>
       </Box>
 
       <Box
