@@ -1,4 +1,5 @@
 import { Box, Typography, Link , Avatar, Badge } from "@mui/material";
+import { Link as Enviar } from "react-router-dom";
 import React, { useState } from "react";
 import CartaoPerfil from "./CartaoPerfil";
 
@@ -23,9 +24,11 @@ const MaisTocados = () => {
             Visível apenas para você
           </Typography>
         </Box>
-        <Link underline="hover" sx={{ color: "#A7A7A7", cursor: "pointer" }}>
-          Ver tudo
-        </Link>
+        <Enviar to='/Invalido'>
+          <Link underline="hover" sx={{ color: "#A7A7A7", cursor: "pointer" }}>
+            Ver tudo
+          </Link>
+        </Enviar>
       </Box>
 
       <Box
