@@ -1,6 +1,12 @@
 import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { createTheme, CssBaseline, Box, Grid, ThemeProvider } from "@mui/material";
+import {
+  createTheme,
+  CssBaseline,
+  Box,
+  Grid,
+  ThemeProvider,
+} from "@mui/material";
 import { Link as Enviar } from "react-router-dom";
 import AreaPerfil from "../../components/AreaPerfil";
 import Header from "../../components/Header";
@@ -8,14 +14,14 @@ import MaisTocados from "../../components/MaisTocados";
 import MenuLateral from "../../components/MenuLateral";
 import MusicasMaisTocadas from "../../components/MusicasMaisTocadas";
 import PlaylistsPublicas from "../../components/PlaylistsPublicas";
-import  GlobalStyle  from '../../styles/global'
+import GlobalStyle from "../../styles/global";
 
 const darkTheme = createTheme({
-    palette: {
-      mode: 'dark',
-    },
+  palette: {
+    mode: "dark",
+  },
 });
-    
+
 const Profile = () => {
   return (
     <ThemeProvider theme={darkTheme}>
@@ -60,7 +66,6 @@ const Profile = () => {
                   borderRadius: "5px",
                 }}
               >
-                
                 <MaisTocados />
                 <MusicasMaisTocadas />
                 <PlaylistsPublicas />

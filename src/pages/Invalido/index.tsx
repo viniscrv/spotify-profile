@@ -6,6 +6,7 @@ import {
   Box,
   Grid,
   ThemeProvider,
+  Link,
 } from "@mui/material";
 import { Link as Enviar } from "react-router-dom";
 import AreaPerfil from "../../components/AreaPerfil";
@@ -64,11 +65,26 @@ const Invalido = () => {
                   backgroundImage:
                     "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,1))",
                   width: "100%",
-                  height: '60vh',
+                  height: "60vh",
                   borderRadius: "5px",
+                  position: 'relative',
                 }}
               >
-                <NaoEncontrada/>
+                <NaoEncontrada />
+                <Enviar to="/">
+                  <Link
+                    color="inherit"
+                    sx={{ 
+                      color: "#A7A7A7", 
+                      cursor: "pointer",
+                      position: 'absolute',
+                      top: '32px',
+                      right: '32px',
+                    }}
+                  >
+                    Voltar
+                  </Link>
+                </Enviar>
               </Grid>
             </Grid>
           </Grid>

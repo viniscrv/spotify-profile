@@ -7,6 +7,7 @@ function App() {
     <>
       <Router>
         <Routes>
+          <Route path="/" element={<Profile/>}/>
           <Route path="/Profile" element={<Profile/>}/>
           <Route path="/Invalido" element={<Invalido/>}/>
         </Routes>

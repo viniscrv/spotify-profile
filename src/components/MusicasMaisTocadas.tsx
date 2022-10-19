@@ -11,7 +11,6 @@ import {
   ListItemText,
 } from "@mui/material";
 import React from "react";
-import CartaoPerfil from "./CartaoPerfil";
 
 const MusicasMaisTocadas = () => {
   return (

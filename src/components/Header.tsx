@@ -1,5 +1,5 @@
 import logoSpotify from "../../src/assets/img/png-spotify2.png";
-import { Box, TextField, Avatar, Button } from "@mui/material";
+import { Box, TextField, Avatar } from "@mui/material";
 import { Link as Enviar } from "react-router-dom";
 import React from "react";
 

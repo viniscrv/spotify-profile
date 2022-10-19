@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import React from "react";
 import undraw from '../assets/img/undraw_page_not_found_re_e9o6 (2).svg'
 

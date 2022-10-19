@@ -1,6 +1,5 @@
 import { Box, Typography, Link , Avatar, Badge } from "@mui/material";
 import { Link as Enviar } from "react-router-dom";
-import React, { useState } from "react";
 import CartaoPerfil from "./CartaoPerfil";
 
 const MaisTocados = () => {

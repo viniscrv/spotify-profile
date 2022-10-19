@@ -17,7 +17,7 @@ import {
   faHeart,
   faPlus,
 } from "@fortawesome/free-solid-svg-icons";
-import { ExpandLess, ExpandMore, StarBorder } from "@mui/icons-material";
+import { ExpandLess, ExpandMore } from "@mui/icons-material";
 
 function MenuLateral() {
 
