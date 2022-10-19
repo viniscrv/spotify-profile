@@ -2,9 +2,6 @@ import {
   Box,
   Typography,
   Link,
-  List,
-  ListItem,
-  ListItemText,
 } from "@mui/material";
 import React from "react";
 import CardPlaylist from "./CardPlaylist";

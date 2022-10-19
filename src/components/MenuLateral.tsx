@@ -13,7 +13,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBookBookmark,
   faBookmark,
-  faCoffee,
   faHeart,
   faPlus,
 } from "@fortawesome/free-solid-svg-icons";

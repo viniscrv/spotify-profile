@@ -1,5 +1,3 @@
-import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   createTheme,
   CssBaseline,
@@ -7,7 +5,6 @@ import {
   Grid,
   ThemeProvider,
 } from "@mui/material";
-import { Link as Enviar } from "react-router-dom";
 import AreaPerfil from "../../components/AreaPerfil";
 import Header from "../../components/Header";
 import MaisTocados from "../../components/MaisTocados";

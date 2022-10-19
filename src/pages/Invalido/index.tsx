@@ -1,5 +1,3 @@
-import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   createTheme,
   CssBaseline,
@@ -11,11 +9,8 @@ import {
 import { Link as Enviar } from "react-router-dom";
 import AreaPerfil from "../../components/AreaPerfil";
 import Header from "../../components/Header";
-import MaisTocados from "../../components/MaisTocados";
 import MenuLateral from "../../components/MenuLateral";
-import MusicasMaisTocadas from "../../components/MusicasMaisTocadas";
 import NaoEncontrada from "../../components/NaoEncontrada";
-import PlaylistsPublicas from "../../components/PlaylistsPublicas";
 import GlobalStyle from "../../styles/global";
 
 const darkTheme = createTheme({
@@ -67,19 +62,19 @@ const Invalido = () => {
                   width: "100%",
                   height: "60vh",
                   borderRadius: "5px",
-                  position: 'relative',
+                  position: "relative",
                 }}
               >
                 <NaoEncontrada />
                 <Enviar to="/">
                   <Link
                     color="inherit"
-                    sx={{ 
-                      color: "#A7A7A7", 
+                    sx={{
+                      color: "#A7A7A7",
                       cursor: "pointer",
-                      position: 'absolute',
-                      top: '32px',
-                      right: '32px',
+                      position: "absolute",
+                      top: "32px",
+                      right: "32px",
                     }}
                   >
                     Voltar
