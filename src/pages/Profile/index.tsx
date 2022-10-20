@@ -21,16 +21,11 @@ const darkTheme = createTheme({
   },
 });
 
-
 const Profile = () => {
-
-
-  
-
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-      <Box sx={{ maxHeight: "100vh", overflowY: "hidden" }}>
+      <Box>
         <Grid container sx={{ backgroundColor: "black" }}>
           <Grid
             xs={12}
@@ -44,12 +39,18 @@ const Profile = () => {
         </Grid>
 
         <Grid container>
-          <Grid xs={2} sx={{ backgroundColor: "#0b0b0b" }} p={1}>
+          <Grid
+            xs={12}
+            md={2}
+            sx={{ backgroundColor: "#0b0b0b"}}
+            p={1}
+          >
             <MenuLateral />
           </Grid>
 
           <Grid
-            xs={10}
+            xs={12}
+            md={10}
             sx={{
               background:
                 'linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url("../src/assets/img/test1.jpg")',
@@ -59,7 +60,9 @@ const Profile = () => {
           >
             <AreaPerfil />
 
-            <Grid container sx={{ maxHeight: "65vh", overflowY: "scroll" }}>
+            <Grid container sx={{ maxHeight: "65vh", overflowY: "scroll" }} 
+            xs={12}
+            >
               <Grid
                 m={2}
                 p={3}

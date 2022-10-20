@@ -35,6 +35,7 @@ const MaisTocados = () => {
         sx={{
           maxWidth: "1200px",
         }}
+        flexWrap='wrap'
       >
         <CartaoPerfil
           nome="A Boogie Wit da Hoodie"

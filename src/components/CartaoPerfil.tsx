@@ -7,6 +7,7 @@ const CartaoPerfil = (props: { nome: string; imgPerfil: string }) => {
       <Box
         p={2}
         mr={2}
+        mb={2}
         sx={{
           maxWidth: "180px",
           width: "100%",
