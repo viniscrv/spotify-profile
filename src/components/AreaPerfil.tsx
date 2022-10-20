@@ -7,7 +7,7 @@ const AreaPerfil = () => {
       <Box style={{ display: "flex", alignItems: "center", margin: "1em 2em" }}>
         <Avatar
           alt="Vemy Sharp"
-          src="../src/assets/img/profile.jpg"
+          src="../src/assets/img/profile2.jpg"
           sx={{
             width: 260,
             height: 260,

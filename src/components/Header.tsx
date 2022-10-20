@@ -18,7 +18,7 @@ const Header = () => {
           sx={{ width: "360px" }}
         />
       </Box>
-      <Avatar alt="Vemy Sharp" src="../src/assets/img/profile.jpg" />
+      <Avatar alt="Vemy Sharp" src="../src/assets/img/profile2.jpg" />
     </>
   );
 };
