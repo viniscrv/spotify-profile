@@ -4,7 +4,9 @@ import {
   Box,
   Grid,
   ThemeProvider,
+  Alert,
 } from "@mui/material";
+import { useState } from "react";
 import AreaPerfil from "../../components/AreaPerfil";
 import Header from "../../components/Header";
 import MaisTocados from "../../components/MaisTocados";
@@ -19,7 +21,12 @@ const darkTheme = createTheme({
   },
 });
 
+
 const Profile = () => {
+
+
+  
+
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />

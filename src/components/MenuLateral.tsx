@@ -6,8 +6,10 @@ import {
   ListItemIcon,
   Collapse,
   ListItemButton,
+  Alert,
+  Snackbar,
 } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -19,35 +21,49 @@ import {
 import { ExpandLess, ExpandMore } from "@mui/icons-material";
 
 function MenuLateral() {
-
   const [open, setOpen] = React.useState(false);
+  const [expandir, setExpandir] = React.useState(false);
 
   const handleClick = () => {
-    setOpen(!open);
+    if (open === false){
+      setOpen(!open)
+    } 
+  };
+
+
+  const handleClose = (
+    event: React.SyntheticEvent | Event,
+    reason?: string
+  ) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
   };
 
   return (
     <>
       <List>
-        <ListItem button>
+        <ListItem button onClick={handleClick}>
           <ListItemIcon>
             <FontAwesomeIcon icon={faBookBookmark} />
           </ListItemIcon>
           <ListItemText primary="Sua Biblioteca" />
         </ListItem>
-        <ListItem button>
+        <ListItem button onClick={handleClick}>
           <ListItemIcon>
             <FontAwesomeIcon icon={faPlus} />
           </ListItemIcon>
           <ListItemText primary="Criar Playlist" />
         </ListItem>
-        <ListItem button>
+        <ListItem button onClick={handleClick}>
           <ListItemIcon>
             <FontAwesomeIcon icon={faHeart} />
           </ListItemIcon>
           <ListItemText primary="Músicas Curtidas" />
         </ListItem>
-        <ListItem button>
+        <ListItem button onClick={handleClick}>
           <ListItemIcon>
             <FontAwesomeIcon icon={faBookmark} />
           </ListItemIcon>
@@ -60,55 +76,56 @@ function MenuLateral() {
           color: "#A7A7A7",
         }}
       >
-        <ListItem button>
+        <ListItem button onClick={handleClick}>
           <ListItemText primary="Lofi hip hop - beats to relax/study to" />
         </ListItem>
-        <ListItem button>
+        <ListItem button onClick={handleClick}>
           <ListItemText primary="Rap Workout" />
         </ListItem>
-        <ListItem button>
+        <ListItem button onClick={handleClick}>
           <ListItemText primary="DOPE." />
         </ListItem>
-        <ListItem button>
+        <ListItem button onClick={handleClick}>
           <ListItemText primary="Top Brasil" />
         </ListItem>
-        <ListItem button>
+        <ListItem button onClick={handleClick}>
           <ListItemText primary="No Cap" />
         </ListItem>
-        <ListItem button>
+        <ListItem button onClick={handleClick}>
           <ListItemText primary="TRAPPERZ" />
         </ListItem>
 
-        <ListItemButton onClick={handleClick}>
-        <ListItemText primary="Suas playlists" />
-        {open ? <ExpandLess /> : <ExpandMore />}
-      </ListItemButton>
+        <ListItemButton onClick={() => setExpandir(!expandir)}>
+          <ListItemText primary="Suas playlists" />
+          {expandir ? <ExpandLess /> : <ExpandMore />}
+        </ListItemButton>
 
-
-        <Collapse in={open} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText primary="Playlist 01" />
-          </ListItemButton>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText primary="Playlist 02" />
-          </ListItemButton>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText primary="Playlist 03" />
-          </ListItemButton>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText primary="Playlist 04" />
-          </ListItemButton>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText primary="Playlist 05" />
-          </ListItemButton>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText primary="Playlist 06" />
-          </ListItemButton>
-        </List>
-      </Collapse>
-
+        <Collapse in={expandir} timeout="auto" unmountOnExit>
+          <List component="div" disablePadding>
+            <ListItemButton onClick={handleClick} sx={{ pl: 4 }}>
+              <ListItemText primary="Playlist 01" />
+            </ListItemButton>
+            <ListItemButton onClick={handleClick} sx={{ pl: 4 }}>
+              <ListItemText primary="Playlist 02" />
+            </ListItemButton>
+            <ListItemButton onClick={handleClick} sx={{ pl: 4 }}>
+              <ListItemText primary="Playlist 03" />
+            </ListItemButton>
+            <ListItemButton onClick={handleClick} sx={{ pl: 4 }}>
+              <ListItemText primary="Playlist 04" />
+            </ListItemButton>
+            <ListItemButton onClick={handleClick} sx={{ pl: 4 }}>
+              <ListItemText primary="Playlist 05" />
+            </ListItemButton>
+          </List>
+        </Collapse>
       </List>
+
+      <Snackbar open={open} onClose={handleClose}>
+        <Alert onClose={handleClose} severity="info" sx={{ width: "100%" }}>
+          Não há nada aqui
+        </Alert>
+      </Snackbar>
     </>
   );
 }
