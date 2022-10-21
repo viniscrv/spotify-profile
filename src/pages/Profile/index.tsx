@@ -39,12 +39,7 @@ const Profile = () => {
         </Grid>
 
         <Grid container>
-          <Grid
-            xs={12}
-            md={2}
-            sx={{ backgroundColor: "#0b0b0b"}}
-            p={1}
-          >
+          <Grid xs={12} md={2} sx={{ backgroundColor: "#0b0b0b" }} p={1}>
             <MenuLateral />
           </Grid>
 
@@ -60,8 +55,10 @@ const Profile = () => {
           >
             <AreaPerfil />
 
-            <Grid container sx={{ maxHeight: "65vh", overflowY: "scroll" }} 
-            xs={12}
+            <Grid
+              container
+              sx={{ maxHeight: "65vh", overflowY: "scroll" }}
+              sm={12}
             >
               <Grid
                 m={2}

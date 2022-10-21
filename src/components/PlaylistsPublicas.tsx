@@ -1,12 +1,7 @@
-import {
-  Box,
-  Typography,
-  Link,
-} from "@mui/material";
+import { Box, Typography, Link } from "@mui/material";
 import React from "react";
 import CardPlaylist from "./CardPlaylist";
 import { Link as Enviar } from "react-router-dom";
-
 
 const PlaylistsPublicas = () => {
   return (
@@ -18,26 +13,19 @@ const PlaylistsPublicas = () => {
         mt={5}
         mr={1}
       >
-        <Box
-        mb={3}
-        >
+        <Box mb={3}>
           <Typography variant="h5" sx={{ fontWeight: "600" }}>
             Playlists públicas
           </Typography>
         </Box>
-        <Enviar to='/Invalido'>
+        <Enviar to="/Invalido">
           <Link underline="hover" sx={{ color: "#A7A7A7", cursor: "pointer" }}>
             Ver tudo
           </Link>
         </Enviar>
       </Box>
 
-      <Box
-        display="flex"
-        sx={{
-          maxWidth: "1200px",
-        }}
-      >
+      <Box display="flex" flexWrap="wrap">
         <CardPlaylist
           nome="Playlist 01"
           imgPlaylist="../src/assets/img/cat1.jpg"

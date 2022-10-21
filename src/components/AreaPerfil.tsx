@@ -4,7 +4,11 @@ import React from "react";
 const AreaPerfil = () => {
   return (
     <>
-      <Box style={{ display: "flex", alignItems: "center", margin: "1em 2em" }}>
+      <Box
+        style={{ alignItems: "center", margin: "1em 2em" }}
+        display="flex"
+        flexWrap="wrap"
+      >
         <Avatar
           alt="Vemy Sharp"
           src="../src/assets/img/profile2.jpg"
@@ -13,9 +17,9 @@ const AreaPerfil = () => {
             height: 260,
             border: "5px solid transparent",
             outline: "3px solid #fff",
-            '&:hover': {
-                filter: 'brightness(80%)'
-            }
+            "&:hover": {
+              filter: "brightness(80%)",
+            },
           }}
         />
         <Box style={{ margin: "1.6em" }}>
@@ -26,7 +30,6 @@ const AreaPerfil = () => {
           <p>6 playlists públicas</p>
         </Box>
       </Box>
-      
     </>
   );
 };

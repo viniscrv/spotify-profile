@@ -21,7 +21,6 @@ const MusicasMaisTocadas = () => {
         justifyContent="space-between"
         mt={5}
         mr={1}
-
       >
         <Box>
           <Typography variant="h5" sx={{ fontWeight: "600" }}>
@@ -34,7 +33,7 @@ const MusicasMaisTocadas = () => {
             Visível apenas para você
           </Typography>
         </Box>
-        <Enviar to='/Invalido'>
+        <Enviar to="/Invalido">
           <Link underline="hover" sx={{ color: "#A7A7A7", cursor: "pointer" }}>
             Ver tudo
           </Link>
@@ -46,61 +45,92 @@ const MusicasMaisTocadas = () => {
           minWidth: "1200px",
         }}
       >
-        <List >
-          <ListItem button >
+        <List>
+          <ListItem button>
             <span style={{ marginRight: "1em" }}>1</span>
-            <ListItemText sx={{minWidth: '200px'}} primary="FAME - A COLORS ENCORE" />
+            <ListItemText
+              sx={{ minWidth: "200px" }}
+              primary="FAME - A COLORS ENCORE"
+            />
 
-            <Typography variant="body1" sx={{
-              width: '100%',
-              textAlign: 'center',
-              color: '#A7A7A7'
-            }}>Fame - A COLORS ENCORE</Typography>
+            <Typography
+              variant="body1"
+              sx={{
+                width: "100%",
+                textAlign: "center",
+                color: "#A7A7A7",
+              }}
+            >
+              Fame - A COLORS ENCORE
+            </Typography>
 
             <FontAwesomeIcon icon={faHeart} />
-            <span style={{marginLeft: '2em'}}>01:51</span>
-
+            <span style={{ marginLeft: "2em" }}>01:51</span>
           </ListItem>
           <ListItem button>
             <span style={{ marginRight: "1em" }}>2</span>
 
-            <ListItemText sx={{minWidth: '200px'}} primary="MEGA DO MAL CAMINHO" />
-            <Typography variant="body1" sx={{
-              width: '100%',
-              textAlign: 'center',
-              color: '#A7A7A7'
-            }}>MEGA DO MAL CAMINHO</Typography>
+            <ListItemText
+              sx={{ minWidth: "200px" }}
+              primary="MEGA DO MAL CAMINHO"
+            />
+            <Typography
+              variant="body1"
+              sx={{
+                width: "100%",
+                textAlign: "center",
+                color: "#A7A7A7",
+              }}
+            >
+              MEGA DO MAL CAMINHO
+            </Typography>
 
             <FontAwesomeIcon icon={faHeart} />
-            <span style={{marginLeft: '2em'}}>01:51</span>
+            <span style={{ marginLeft: "2em" }}>01:51</span>
           </ListItem>
 
           <ListItem button>
             <span style={{ marginRight: "1em" }}>3</span>
 
-            <ListItemText sx={{minWidth: '200px'}} primary="Dancin - Krono Remix" />
-            <Typography variant="body1" sx={{
-              width: '100%',
-              textAlign: 'center',
-              color: '#A7A7A7'
-            }}>Ibiza 2019</Typography>
+            <ListItemText
+              sx={{ minWidth: "200px" }}
+              primary="Dancin - Krono Remix"
+            />
+            <Typography
+              variant="body1"
+              sx={{
+                width: "100%",
+                textAlign: "center",
+                color: "#A7A7A7",
+              }}
+            >
+              Ibiza 2019
+            </Typography>
 
             <FontAwesomeIcon icon={faHeart} />
-            <span style={{marginLeft: '2em'}}>01:51</span>
+            <span style={{ marginLeft: "2em" }}>01:51</span>
           </ListItem>
 
           <ListItem button>
             <span style={{ marginRight: "1em" }}>4</span>
 
-            <ListItemText sx={{minWidth: '200px'}} primary="Still Dont Know My Name" />
-            <Typography variant="body1" sx={{
-              width: '100%',
-              textAlign: 'center',
-              color: '#A7A7A7'
-            }}>Euphoria (Original Score from the HBO Series)</Typography>
+            <ListItemText
+              sx={{ minWidth: "200px" }}
+              primary="Still Dont Know My Name"
+            />
+            <Typography
+              variant="body1"
+              sx={{
+                width: "100%",
+                textAlign: "center",
+                color: "#A7A7A7",
+              }}
+            >
+              Euphoria (Original Score from the HBO Series)
+            </Typography>
 
             <FontAwesomeIcon icon={faHeart} />
-            <span style={{marginLeft: '2em'}}>01:51</span>
+            <span style={{ marginLeft: "2em" }}>01:51</span>
           </ListItem>
         </List>
       </Box>

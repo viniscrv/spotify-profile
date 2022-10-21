@@ -1,4 +1,4 @@
-import { Box, Typography, Link , Avatar, Badge } from "@mui/material";
+import { Box, Typography, Link, Avatar, Badge } from "@mui/material";
 import { Link as Enviar } from "react-router-dom";
 import CartaoPerfil from "./CartaoPerfil";
 
@@ -23,20 +23,14 @@ const MaisTocados = () => {
             Visível apenas para você
           </Typography>
         </Box>
-        <Enviar to='/Invalido'>
+        <Enviar to="/Invalido">
           <Link underline="hover" sx={{ color: "#A7A7A7", cursor: "pointer" }}>
             Ver tudo
           </Link>
         </Enviar>
       </Box>
 
-      <Box
-        display="flex"
-        sx={{
-          maxWidth: "1200px",
-        }}
-        flexWrap='wrap'
-      >
+      <Box display="flex" flexWrap="wrap">
         <CartaoPerfil
           nome="A Boogie Wit da Hoodie"
           imgPerfil={"../src/assets/img/boogie.jpg"}
